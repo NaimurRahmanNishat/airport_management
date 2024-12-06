@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import abouti from "../../../public/abouti.jpg";
 import aboutii from "../../../public/aboutii.jpg";
+import { motion } from "framer-motion";
 
 const Page = () => {
   const [bgIndex, setBgIndex] = useState<number>(0);
@@ -27,7 +28,17 @@ const Page = () => {
       style={{ backgroundImage: `url(${bgImage[bgIndex]})` }}
       className="bg-cover bg-center w-full h-full opacity-65 transition-all duration-1000"
     >
-      <main className="px-4 md:px-8 lg:px-16 xl:px-32 2xl:px-64 pb-10">
+      <motion.div
+        initial={{ opacity: 0, y: 100 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{
+          type: "spring",
+          stiffness: 100,
+          damping: 10,
+          delay: 0.8,
+        }}
+        className="px-4 md:px-8 lg:px-16 xl:px-32 2xl:px-64 pb-10"
+      >
         <div className="">
           <h1 className="text-4xl md:text-5xl pt-4 md:pt-10 text-purple-800 text-center cursor-pointer pb-4 md:pb-10">
             About Us
@@ -171,7 +182,7 @@ const Page = () => {
             </p>
           </div>
         </div>
-      </main>
+      </motion.div>
     </main>
   );
 };

@@ -1,4 +1,5 @@
 "use client";
+import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 
 const Page = () => {
@@ -74,11 +75,21 @@ const Page = () => {
       <div className="px-4 md:px-8 lg:px-16 xl:px-32 2xl:px-64">
         {/* Airport active Image */}
         <div className="flex items-center justify-center md:pt-[100px] pt-[30px] font-extrabold text-3xl md:text-7xl flex-col md:flex-row">
-          <span className="text-center cursor-pointer text-gradient shadow-sm hover:from-purple-600 hover:to-blue-600 transition-transform transform hover:scale-105 active:scale-95">
+          <motion.h1
+            initial={{ opacity: 0, y: 100 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{
+              type: "spring",
+              stiffness: 100,
+              damping: 10,
+              delay: 0.8,
+            }}
+            className="text-center cursor-pointer text-gradient shadow-sm hover:from-purple-600 hover:to-blue-600 transition-transform transform hover:scale-105 active:scale-95"
+          >
             Flughafen München-Riem <br />
             <p>International</p>
             <p>Airport</p>
-          </span>
+          </motion.h1>
         </div>
         {/* Airport Details */}
         <div className="md:mt-[100px] mt-[10px] w-full md:h-[100px] h-[260px]">
