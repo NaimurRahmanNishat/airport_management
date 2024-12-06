@@ -22,6 +22,8 @@ const Page = () => {
     setOpenGuide(false);
     setAirNumber(false);
     setTicketPrice(false);
+    setInternational(false);
+    setDomestic(false);
   };
 
   const handleGuide = () => {
@@ -29,6 +31,8 @@ const Page = () => {
     setOpenRoute(false);
     setAirNumber(false);
     setTicketPrice(false);
+    setInternational(false);
+    setDomestic(false);
   };
 
   const handleNumber = () => {
@@ -36,6 +40,8 @@ const Page = () => {
     setOpenRoute(false);
     setOpenGuide(false);
     setTicketPrice(false);
+    setInternational(false);
+    setDomestic(false);
   };
 
   const handlePrice = () => {
@@ -43,6 +49,8 @@ const Page = () => {
     setOpenRoute(false);
     setOpenGuide(false);
     setAirNumber(false);
+    setInternational(false);
+    setDomestic(false);
   };
 
   const handleDomesticRoute = () => {
