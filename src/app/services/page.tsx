@@ -91,28 +91,28 @@ const Page = () => {
           Hello, {user.firstName} welcome to Flughafen München-Riem
           International Airport
         </h3>
-        <div className="mt-5 w-full h-[96px] md:h-[100px] bg-slate-200/35 opacity-100 grid grid-cols-2 md:grid-cols-4">
+        <div className="mt-5 w-full h-[96px] md:h-[100px] opacity-100 grid gap-2 grid-cols-2 md:grid-cols-4">
           <button
             onClick={handleRoute}
-            className="md:text-2xl text-purple-700 hover:ring-2 hover:bg-[#dc5110] hover:font-bold"
+            className="md:text-2xl bg-slate-200/35 text-purple-700 hover:ring-2 hover:bg-[#dc5110] hover:font-bold"
           >
             <span>Aircraft Route</span>
           </button>
           <button
             onClick={handleGuide}
-            className="md:text-2xl text-purple-700 hover:ring-2 hover:bg-[#dc5110] hover:font-bold"
+            className="md:text-2xl bg-slate-200/35 text-purple-700 hover:ring-2 hover:bg-[#dc5110] hover:font-bold"
           >
             <span>Passenger Guide</span>
           </button>
           <button
             onClick={handleNumber}
-            className="md:text-2xl text-purple-700 hover:ring-2 hover:bg-[#dc5110] hover:font-bold"
+            className="md:text-2xl bg-slate-200/35 text-purple-700 hover:ring-2 hover:bg-[#dc5110] hover:font-bold"
           >
             <span>Aircraft Number</span>
           </button>
           <button
             onClick={handlePrice}
-            className="md:text-2xl text-purple-700 hover:ring-2 hover:bg-[#dc5110] hover:font-bold"
+            className="md:text-2xl bg-slate-200/35 text-purple-700 hover:ring-2 hover:bg-[#dc5110] hover:font-bold"
           >
             <span>Ticket Price</span>
           </button>
