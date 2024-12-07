@@ -26,7 +26,7 @@ const PassernerGuide = () => {
       <div className="flex flex-col md:flex-row gap-2 items-center justify-between pt-5 pb-5">
         <motion.div
           initial={{ opacity: 0, x: -100 }}
-          whileInView={{ opacity: 1, y: 0 }}
+          whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
           transition={{
             type: "spring",
@@ -77,7 +77,7 @@ const PassernerGuide = () => {
         </motion.h1>
         <motion.p
           initial={{ opacity: 0, x: -100 }}
-          whileInView={{ opacity: 1, y: 0 }}
+          whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
           transition={{
             type: "spring",
@@ -94,7 +94,7 @@ const PassernerGuide = () => {
         </motion.p>
         <motion.p
           initial={{ opacity: 0, x: 100 }}
-          whileInView={{ opacity: 1, y: 0 }}
+          whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
           transition={{
             type: "spring",
