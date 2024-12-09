@@ -10,6 +10,7 @@ import aircraftvii from "../../public/aircraft_number/aircraftvii.jpg";
 import aircraftviii from "../../public/aircraft_number/aircraftviii.jpg";
 import aircraftix from "../../public/aircraft_number/aircraftix.jpg";
 import aircraftx from "../../public/aircraft_number/aircraftx.jpeg";
+import { motion } from "framer-motion";
 
 const AircraftNumber = () => {
   const [openi, setOpeni] = useState<boolean>(false);
@@ -162,7 +163,18 @@ const AircraftNumber = () => {
               Airbus A330
             </button>
             {openi && (
-              <div className=" bg-slate-200 grid grid-cols-1 md:grid-cols-2">
+              <motion.div
+                initial={{ opacity: 0, y: 100 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{
+                  type: "spring",
+                  stiffness: 100,
+                  damping: 10,
+                  delay: 0.8,
+                }}
+                className=" bg-slate-200 grid grid-cols-1 md:grid-cols-2"
+              >
                 <Image src={aircrafti} alt="airi" width={600} height={500} />
                 <p className="text-black font-semibold">
                   The Airbus A330 is a wide-body aircraft developed and produced
@@ -184,7 +196,7 @@ const AircraftNumber = () => {
                     -200F, and -300) are now called A330ceo
                   </p>
                 </p>
-              </div>
+              </motion.div>
             )}
           </li>
           <li className="flex flex-col gap-2 bg-slate-600 text-white hover:bg-[#ff014f] cursor-pointer mb-1">
@@ -192,7 +204,18 @@ const AircraftNumber = () => {
               Airbus A220
             </button>
             {openii && (
-              <div className=" bg-slate-200 grid grid-cols-1 md:grid-cols-2">
+              <motion.div
+                initial={{ opacity: 0, y: 100 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{
+                  type: "spring",
+                  stiffness: 100,
+                  damping: 10,
+                  delay: 0.8,
+                }}
+                className=" bg-slate-200 grid grid-cols-1 md:grid-cols-2"
+              >
                 <Image src={aircraftii} alt="airi" width={600} height={500} />
                 <p className="text-black font-semibold">
                   The Airbus A220 is a family of five-abreast narrow-body
@@ -210,13 +233,26 @@ const AircraftNumber = () => {
                   better-than-expected fuel burn and dispatch reliability, as
                   well as positive feedback from passengers and crew.
                 </p>
-              </div>
+              </motion.div>
             )}
           </li>
           <li className="flex flex-col gap-2 bg-slate-600 text-white hover:bg-[#ff014f] cursor-pointer mb-1">
-            <button onClick={handleClickiii} className="px-2 py-2">Airbus A380-800</button>
+            <button onClick={handleClickiii} className="px-2 py-2">
+              Airbus A380-800
+            </button>
             {openiii && (
-              <div className=" bg-slate-200 grid grid-cols-1 md:grid-cols-2">
+              <motion.div
+                initial={{ opacity: 0, y: 100 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{
+                  type: "spring",
+                  stiffness: 100,
+                  damping: 10,
+                  delay: 0.8,
+                }}
+                className=" bg-slate-200 grid grid-cols-1 md:grid-cols-2"
+              >
                 <Image src={aircraftiii} alt="airi" width={600} height={500} />
                 <p className="text-black font-semibold">
                   The Airbus A380 is a very large wide-body airliner, developed
@@ -233,13 +269,26 @@ const AircraftNumber = () => {
                   and the US Federal Aviation Administration (FAA) on 12
                   December 2006.
                 </p>
-              </div>
+              </motion.div>
             )}
           </li>
           <li className="flex flex-col gap-2 bg-slate-600 text-white hover:bg-[#ff014f] cursor-pointer mb-1">
-            <button onClick={handleClickiv} className="px-2 py-2">Airbus A330neo</button>
+            <button onClick={handleClickiv} className="px-2 py-2">
+              Airbus A330neo
+            </button>
             {openiv && (
-              <div className=" bg-slate-200 grid grid-cols-1 md:grid-cols-2">
+              <motion.div
+                initial={{ opacity: 0, y: 100 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{
+                  type: "spring",
+                  stiffness: 100,
+                  damping: 10,
+                  delay: 0.8,
+                }}
+                className=" bg-slate-200 grid grid-cols-1 md:grid-cols-2"
+              >
                 <Image src={aircraftiv} alt="airi" width={600} height={500} />
                 <p className="text-black font-semibold">
                   The Airbus A330neo (&quot;neo&quot; for &quot;New Engine
@@ -259,13 +308,26 @@ const AircraftNumber = () => {
                   it was first delivered to TAP Air Portugal on 26 November 2018
                   and entered service on 15 December.
                 </p>
-              </div>
+              </motion.div>
             )}
           </li>
           <li className="flex flex-col gap-2 bg-slate-600 text-white hover:bg-[#ff014f] cursor-pointer mb-1">
-            <button onClick={handleClickv} className="px-2 py-2">Boeing 737</button>
+            <button onClick={handleClickv} className="px-2 py-2">
+              Boeing 737
+            </button>
             {openv && (
-              <div className=" bg-slate-200 grid grid-cols-1 md:grid-cols-2">
+              <motion.div
+                initial={{ opacity: 0, y: 100 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{
+                  type: "spring",
+                  stiffness: 100,
+                  damping: 10,
+                  delay: 0.8,
+                }}
+                className=" bg-slate-200 grid grid-cols-1 md:grid-cols-2"
+              >
                 <Image src={aircraftv} alt="airi" width={600} height={500} />
                 <p className="text-black font-semibold">
                   The Boeing 737 is an American narrow-body airliner produced by
@@ -285,13 +347,26 @@ const AircraftNumber = () => {
                   were upgraded with more fuel-efficient CFM56-3 high-bypass
                   turbofans and offered 110 to 168 seats
                 </p>
-              </div>
+              </motion.div>
             )}
           </li>
           <li className="flex flex-col gap-2 bg-slate-600 text-white hover:bg-[#ff014f] cursor-pointer mb-1">
-            <button onClick={handleClickvi} className="px-2 py-2">Boeing 767</button>
+            <button onClick={handleClickvi} className="px-2 py-2">
+              Boeing 767
+            </button>
             {openvi && (
-              <div className=" bg-slate-200 grid grid-cols-1 md:grid-cols-2">
+              <motion.div
+                initial={{ opacity: 0, y: 100 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{
+                  type: "spring",
+                  stiffness: 100,
+                  damping: 10,
+                  delay: 0.8,
+                }}
+                className=" bg-slate-200 grid grid-cols-1 md:grid-cols-2"
+              >
                 <Image src={aircraftvi} alt="airi" width={600} height={500} />
                 <p className="text-black font-semibold">
                   The Boeing 767 is an American wide-body airliner developed and
@@ -312,13 +387,26 @@ const AircraftNumber = () => {
                   JT9D turbofans. JT9D engines were eventually replaced by
                   PW4000 engines.
                 </p>
-              </div>
+              </motion.div>
             )}
           </li>
           <li className="flex flex-col gap-2 bg-slate-600 text-white hover:bg-[#ff014f] cursor-pointer mb-1">
-            <button onClick={handleClickvii} className="px-2 py-2">Boeing 777</button>
+            <button onClick={handleClickvii} className="px-2 py-2">
+              Boeing 777
+            </button>
             {openvii && (
-              <div className=" bg-slate-200 grid grid-cols-1 md:grid-cols-2">
+              <motion.div
+                initial={{ opacity: 0, y: 100 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{
+                  type: "spring",
+                  stiffness: 100,
+                  damping: 10,
+                  delay: 0.8,
+                }}
+                className=" bg-slate-200 grid grid-cols-1 md:grid-cols-2"
+              >
                 <Image src={aircraftvii} alt="airi" width={600} height={500} />
                 <p className="text-black font-semibold">
                   The Boeing 777, commonly referred to as the Triple Seven, is
@@ -339,13 +427,26 @@ const AircraftNumber = () => {
                   368 passengers, with a range of 5,240 to 8,555 nautical miles
                   [nmi] (9,700 to 15,840 km; 6,030 to 9,840 mi).{" "}
                 </p>
-              </div>
+              </motion.div>
             )}
           </li>
           <li className="flex flex-col gap-2 bg-slate-600 text-white hover:bg-[#ff014f] cursor-pointer mb-1">
-            <button onClick={handleClickviii} className="px-2 py-2">Sukhoi SSJ100</button>
+            <button onClick={handleClickviii} className="px-2 py-2">
+              Sukhoi SSJ100
+            </button>
             {openviii && (
-              <div className=" bg-slate-200 grid grid-cols-1 md:grid-cols-2">
+              <motion.div
+                initial={{ opacity: 0, y: 100 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{
+                  type: "spring",
+                  stiffness: 100,
+                  damping: 10,
+                  delay: 0.8,
+                }}
+                className=" bg-slate-200 grid grid-cols-1 md:grid-cols-2"
+              >
                 <Image src={aircraftviii} alt="airi" width={600} height={500} />
                 <p className="text-black font-semibold">
                   The Sukhoi Superjet 100 (Russian: Сухой Суперджет 100,
@@ -365,13 +466,26 @@ const AircraftNumber = () => {
                   type has recorded four hull loss accidents and 89 deaths as of
                   July 2024.
                 </p>
-              </div>
+              </motion.div>
             )}
           </li>
           <li className="flex flex-col gap-2 bg-slate-600 text-white hover:bg-[#ff014f] cursor-pointer mb-1">
-            <button onClick={handleClickix} className="px-2 py-2">Tupolev Tu-204</button>
+            <button onClick={handleClickix} className="px-2 py-2">
+              Tupolev Tu-204
+            </button>
             {openix && (
-              <div className=" bg-slate-200 grid grid-cols-1 md:grid-cols-2">
+              <motion.div
+                initial={{ opacity: 0, y: 100 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{
+                  type: "spring",
+                  stiffness: 100,
+                  damping: 10,
+                  delay: 0.8,
+                }}
+                className=" bg-slate-200 grid grid-cols-1 md:grid-cols-2"
+              >
                 <Image src={aircraftix} alt="airi" width={600} height={500} />
                 <p className="text-black font-semibold">
                   The Tupolev Tu-204 (Russian: Туполев Ту-204) is a twin-engined
@@ -387,13 +501,26 @@ const AircraftNumber = () => {
                   narrow-body Tu-204SM, which made its maiden flight on 29
                   December 2010.
                 </p>
-              </div>
+              </motion.div>
             )}
           </li>
           <li className="flex flex-col gap-2 bg-slate-600 text-white hover:bg-[#ff014f] cursor-pointer mb-1">
-            <button onClick={handleClickx} className="px-2 py-2">Comac C919</button>
+            <button onClick={handleClickx} className="px-2 py-2">
+              Comac C919
+            </button>
             {openx && (
-              <div className=" bg-slate-200 grid grid-cols-1 md:grid-cols-2">
+              <motion.div
+                initial={{ opacity: 0, y: 100 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{
+                  type: "spring",
+                  stiffness: 100,
+                  damping: 10,
+                  delay: 0.8,
+                }}
+                className=" bg-slate-200 grid grid-cols-1 md:grid-cols-2"
+              >
                 <Image src={aircraftx} alt="airi" width={600} height={500} />
                 <p className="text-black font-semibold">
                   The Comac C919 is a narrow-body airliner developed by Chinese
@@ -409,7 +536,7 @@ const AircraftNumber = () => {
                   turbofan engines and carries 156 to 168 passengers in a normal
                   operating configuration up to 5,555 km (3000 nmi; 3,500 mi).
                 </p>
-              </div>
+              </motion.div>
             )}
           </li>
         </ul>
