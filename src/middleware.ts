@@ -14,3 +14,13 @@ export const config = {
     '/(api|trpc)(.*)',
   ],
 };
+
+
+
+
+
+
+// NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=pk_test_c3RyaWtpbmctcHVwLTExLmNsZXJrLmFjY291bnRzLmRldiQ
+// CLERK_SECRET_KEY=sk_test_fAD3LvMbKvEqE1q6qP64lOs9jXyxZM1LxU2rW7rapz
+// NEXT_PUBLIC_CLERK_SIGN_IN_URL=/sign-in
+// NEXT_PUBLIC_CLERK_SIGN_UP_URL=/sign-up
