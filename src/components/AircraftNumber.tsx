@@ -176,7 +176,8 @@ const AircraftNumber = () => {
                 className=" bg-slate-200 grid grid-cols-1 md:grid-cols-2"
               >
                 <Image src={aircrafti} alt="airi" width={600} height={500} />
-                <p className="text-black font-semibold">
+                <div  className="text-black font-semibold">
+                <p>
                   The Airbus A330 is a wide-body aircraft developed and produced
                   by Airbus. Airbus began developing larger A300 derivatives in
                   the mid-1970s, giving rise to the A330 twinjet as well as the
@@ -186,7 +187,8 @@ const AircraftNumber = () => {
                   service with Air Inter in January 1994. The A330-200, a
                   shortened longer-range variant, followed in 1998 with Canada
                   3000 as the launch operator.
-                  <p className="py-3">
+                </p>
+                <p className="py-3">
                     In July 2014, Airbus announced the re-engined A330neo (new
                     engine option) comprising A330-800 and -900, which entered
                     service with TAP Air Portugal in December 2018. With the
@@ -195,7 +197,7 @@ const AircraftNumber = () => {
                     fuel economy per seat. The first-generation A330s (-200,
                     -200F, and -300) are now called A330ceo
                   </p>
-                </p>
+                </div>
               </motion.div>
             )}
           </li>

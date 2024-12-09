@@ -179,7 +179,18 @@ const PassernerGuide = () => {
             <h4 className="md:text-4xl text-3xl font-secondary text-pink md:pb-6 pb-3">
               Your benefits
             </h4>
-            <ol className="list-disc px-4 pb-5">
+            <motion.ol
+              initial={{ opacity: 0, y: 100 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{
+                type: "spring",
+                stiffness: 100,
+                damping: 10,
+                delay: 0.8,
+              }}
+              className="list-disc px-4 pb-5"
+            >
               <li className="pb-1">
                 Robust stability and maximum flexibility guaranteed
               </li>
@@ -199,7 +210,7 @@ const PassernerGuide = () => {
                 as well as post attachments (signage, frames for printouts or
                 hand disinfection dispensers etc)
               </li>
-            </ol>
+            </motion.ol>
           </div>
         </div>
         {/* PUBLIC GUIDANCE by Via Guide */}
@@ -210,6 +221,5 @@ const PassernerGuide = () => {
 };
 
 export default PassernerGuide;
-
 
 // https://www.viaguide.com/en/industry-sectors/airports    follo the website

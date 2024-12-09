@@ -5,6 +5,7 @@ import Baltrum from "../../public/domestic/Baltrum.jpg";
 import heidebusum from "../../public/domestic/heidebusum.jpg";
 import Heligoland from "../../public/domestic/Heligoland.jpg";
 import Juistairfield from "../../public/domestic/Juistairfield.jpg";
+import { motion } from "framer-motion";
 
 const DomesticRoute = () => {
   return (
@@ -12,7 +13,17 @@ const DomesticRoute = () => {
       {/* Baltrum Details */}
       <div className="">
         <div className="flex flex-col md:flex-row gap-2 items-center justify-between">
-          <div>
+          <motion.div
+            initial={{ opacity: 0, x: -100 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{
+              type: "spring",
+              stiffness: 100,
+              damping: 10,
+              delay: 0.8,
+            }}
+          >
             <Image
               src={Munichriem}
               alt="munich-riem"
@@ -20,19 +31,40 @@ const DomesticRoute = () => {
               height={400}
             />
             <p className="text-center font-semibold">Munich Riem</p>
-          </div>
+          </motion.div>
           <span>
             <FaArrowsLeftRight
               size={72}
               className="text-purple-700 rotate-90 md:rotate-0"
             />
           </span>
-          <div>
+          <motion.div
+            initial={{ opacity: 0, x: 100 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{
+              type: "spring",
+              stiffness: 100,
+              damping: 10,
+              delay: 0.8,
+            }}
+          >
             <Image src={Baltrum} alt="munich-riem" width={600} height={400} />
             <p className="text-center font-semibold">Baltrum</p>
-          </div>
+          </motion.div>
         </div>
-        <p className="text-[#ffffff] px-2 pb-2">
+        <motion.p
+          initial={{ opacity: 0, y: 100 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{
+            type: "spring",
+            stiffness: 100,
+            damping: 10,
+            delay: 0.8,
+          }}
+          className="text-[#ffffff] px-2 pb-5"
+        >
           Baltrum is tidal independent laid by ferries owned by the shipping
           company Baltrum Line, founded in 1928, starting in Nebmersiel. The
           journey takes about 30 minutes and depending on the season and tourist
@@ -47,12 +79,22 @@ const DomesticRoute = () => {
           inaugurated in 1970 and extended by a cargo wharf with 35 meters (115
           ft) in length from April to August 2008 due to the relocation of the
           freight transportation.
-        </p>
+        </motion.p>
       </div>
       {/* Heidebusum Details */}
       <div className="">
         <div className="flex flex-col md:flex-row gap-2 items-center justify-between">
-          <div>
+          <motion.div
+            initial={{ opacity: 0, x: -100 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{
+              type: "spring",
+              stiffness: 100,
+              damping: 10,
+              delay: 0.8,
+            }}
+          >
             <Image
               src={Munichriem}
               alt="munich-riem"
@@ -60,24 +102,45 @@ const DomesticRoute = () => {
               height={400}
             />
             <p className="text-center font-semibold">Munich Riem</p>
-          </div>
+          </motion.div>
           <span>
             <FaArrowsLeftRight
               size={72}
               className="text-purple-700 rotate-90 md:rotate-0"
             />
           </span>
-          <div>
+          <motion.div
+            initial={{ opacity: 0, x: 100 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{
+              type: "spring",
+              stiffness: 100,
+              damping: 10,
+              delay: 0.8,
+            }}
+          >
             <Image
               src={heidebusum}
               alt="munich-riem"
-              width={600}
+              width={540}
               height={400}
             />
             <p className="text-center font-semibold">Heidebusum</p>
-          </div>
+          </motion.div>
         </div>
-        <p className="text-[#ffffff] px-2 pb-2">
+        <motion.p
+          initial={{ opacity: 0, y: 100 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{
+            type: "spring",
+            stiffness: 100,
+            damping: 10,
+            delay: 0.8,
+          }}
+          className="text-[#ffffff] px-2 pb-5"
+        >
           Heide–Büsum Airport (German: Flugplatz Heide-Büsum, IATA: HEI, ICAO:
           EDXB) is a small regional airport located in Büsum, a town in the
           Schleswig-Holstein region of northern Germany. It&apos;s primarily
@@ -91,27 +154,47 @@ const DomesticRoute = () => {
           resort, or for trips to Heligoland, a nearby island in the North Sea.
           Special Features: Some flights also focus on scenic views of the
           Wadden Sea, a UNESCO World Heritage Site.
-        </p>
+        </motion.p>
       </div>
       {/* Heligoland Details */}
       <div className="">
         <div className="flex flex-col md:flex-row gap-2 items-center justify-between">
-          <div>
+          <motion.div
+            initial={{ opacity: 0, x: -100 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{
+              type: "spring",
+              stiffness: 100,
+              damping: 10,
+              delay: 0.8,
+            }}
+          >
             <Image
               src={Munichriem}
               alt="munich-riem"
-              width={600}
+              width={560}
               height={400}
             />
             <p className="text-center font-semibold">Munich Riem</p>
-          </div>
+          </motion.div>
           <span>
             <FaArrowsLeftRight
               size={72}
               className="text-purple-700 rotate-90 md:rotate-0"
             />
           </span>
-          <div>
+          <motion.div
+            initial={{ opacity: 0, x: 100 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{
+              type: "spring",
+              stiffness: 100,
+              damping: 10,
+              delay: 0.8,
+            }}
+          >
             <Image
               src={Heligoland}
               alt="munich-riem"
@@ -119,9 +202,20 @@ const DomesticRoute = () => {
               height={400}
             />
             <p className="text-center font-semibold">Heligoland</p>
-          </div>
+          </motion.div>
         </div>
-        <p className="text-[#ffffff] px-2 pb-2">
+        <motion.p
+          initial={{ opacity: 0, y: -100 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{
+            type: "spring",
+            stiffness: 100,
+            damping: 10,
+            delay: 0.8,
+          }}
+          className="text-[#ffffff] px-2 pb-5"
+        >
           Heligoland Airport (German: Flugplatz Helgoland-Düne, IATA: HGL, ICAO:
           EDHX) is a unique and small airport located on the island of Düne,
           which is part of the Heligoland archipelago in the North Sea, Germany.
@@ -141,12 +235,22 @@ const DomesticRoute = () => {
           runways and the exposed location make landing and takeoff particularly
           challenging and scenic. Düne island itself is a tourist spot with
           sandy beaches and seals, making the airport a convenient gateway.
-        </p>
+        </motion.p>
       </div>
       {/* Juistairfield Details */}
       <div className="">
         <div className="flex flex-col md:flex-row gap-2 items-center justify-between">
-          <div>
+          <motion.div
+            initial={{ opacity: 0, x: -100 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{
+              type: "spring",
+              stiffness: 100,
+              damping: 10,
+              delay: 0.8,
+            }}
+          >
             <Image
               src={Munichriem}
               alt="munich-riem"
@@ -154,14 +258,24 @@ const DomesticRoute = () => {
               height={400}
             />
             <p className="text-center font-semibold">Munich Riem</p>
-          </div>
+          </motion.div>
           <span>
             <FaArrowsLeftRight
               size={72}
               className="text-purple-700 rotate-90 md:rotate-0"
             />
           </span>
-          <div>
+          <motion.div
+            initial={{ opacity: 0, x: 100 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{
+              type: "spring",
+              stiffness: 100,
+              damping: 10,
+              delay: 0.8,
+            }}
+          >
             <Image
               src={Juistairfield}
               alt="munich-riem"
@@ -169,26 +283,37 @@ const DomesticRoute = () => {
               height={400}
             />
             <p className="text-center font-semibold">Juistairfield</p>
-          </div>
+          </motion.div>
         </div>
-        <p className="text-[#ffffff] px-2 pb-2">
+        <motion.p
+          initial={{ opacity: 0, y: -100 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{
+            type: "spring",
+            stiffness: 100,
+            damping: 10,
+            delay: 0.8,
+          }}
+          className="text-[#ffffff] px-2 pb-5"
+        >
           Juist Airfield (German: Flugplatz Juist, IATA: JUI, ICAO: EDWJ) is a
           small regional airport located on the island of Juist, one of the East
-          Frisian Islands in the North Sea, Germany. It&apos;s primarily used for
-          connecting the island to the mainland and for tourism purposes.
+          Frisian Islands in the North Sea, Germany. It&apos;s primarily used
+          for connecting the island to the mainland and for tourism purposes.
           Location: The airfield is on Juist, a narrow barrier island known for
           its car-free policy, sandy beaches, and tranquil atmosphere. The
           island is part of Lower Saxony, Germany. It has a single grass runway,
           which limits its usage to smaller aircraft and good weather
           conditions. The airfield is subject to tidal influences, as Juist is a
-          low-lying island. It primarily serves as a lifeline for the island&apos;s
-          residents and visitors, offering faster transportation compared to
-          ferries. It’s popular among tourists looking for a unique way to visit
-          Juist or enjoy scenic flights over the Wadden Sea. Regular flights are
-          operated by FLN Frisia Luftverkehr, a small airline that connects
-          Juist with the mainland (e.g., Norden-Norddeich Airfield). Charter
-          flights are also available for private travel.
-        </p>
+          low-lying island. It primarily serves as a lifeline for the
+          island&apos;s residents and visitors, offering faster transportation
+          compared to ferries. It’s popular among tourists looking for a unique
+          way to visit Juist or enjoy scenic flights over the Wadden Sea.
+          Regular flights are operated by FLN Frisia Luftverkehr, a small
+          airline that connects Juist with the mainland (e.g., Norden-Norddeich
+          Airfield). Charter flights are also available for private travel.
+        </motion.p>
       </div>
     </main>
   );
