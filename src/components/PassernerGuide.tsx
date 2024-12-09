@@ -14,7 +14,7 @@ const PassernerGuide = () => {
           viewport={{ once: true }}
           transition={{
             type: "spring",
-            stiffness: 50,
+            stiffness: 100,
             damping: 10,
             delay: 0.8,
           }}
@@ -30,7 +30,7 @@ const PassernerGuide = () => {
           viewport={{ once: true }}
           transition={{
             type: "spring",
-            stiffness: 50,
+            stiffness: 100,
             damping: 10,
             delay: 0.8,
           }}
@@ -47,7 +47,7 @@ const PassernerGuide = () => {
           animate={{ opacity: 1, x: 0 }}
           transition={{
             type: "spring",
-            stiffness: 50,
+            stiffness: 100,
             damping: 10,
             delay: 0.8,
           }}
@@ -67,7 +67,7 @@ const PassernerGuide = () => {
           viewport={{ once: true }}
           transition={{
             type: "spring",
-            stiffness: 50,
+            stiffness: 100,
             damping: 10,
             delay: 0.8,
           }}
@@ -81,7 +81,7 @@ const PassernerGuide = () => {
           viewport={{ once: true }}
           transition={{
             type: "spring",
-            stiffness: 50,
+            stiffness: 100,
             damping: 10,
             delay: 0.8,
           }}
@@ -98,7 +98,7 @@ const PassernerGuide = () => {
           viewport={{ once: true }}
           transition={{
             type: "spring",
-            stiffness: 50,
+            stiffness: 100,
             damping: 10,
             delay: 0.8,
           }}
@@ -114,7 +114,7 @@ const PassernerGuide = () => {
           viewport={{ once: true }}
           transition={{
             type: "spring",
-            stiffness: 50,
+            stiffness: 100,
             damping: 10,
             delay: 0.8,
           }}
@@ -145,7 +145,7 @@ const PassernerGuide = () => {
               viewport={{ once: true }}
               transition={{
                 type: "spring",
-                stiffness: 50,
+                stiffness: 100,
                 damping: 10,
                 delay: 0.8,
               }}
@@ -163,7 +163,7 @@ const PassernerGuide = () => {
               viewport={{ once: true }}
               transition={{
                 type: "spring",
-                stiffness: 50,
+                stiffness: 100,
                 damping: 10,
                 delay: 0.8,
               }}
