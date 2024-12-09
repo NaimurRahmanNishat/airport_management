@@ -43,7 +43,7 @@ const Page = () => {
               <input
                 type="text"
                 placeholder="-please choose-"
-                className="px-3 py-2 w-[300px]"
+                className="px-3 py-2 w-[300px] outline-none"
               />
               <label className="flex flex-col pt-10 text-lg pb-2">
                 Message *
@@ -51,7 +51,7 @@ const Page = () => {
               <textarea
                 name="message"
                 id=""
-                className="md:w-full pt-2 w-full"
+                className="md:w-full pt-2 w-full outline-none"
               ></textarea>
               <div className="flex items-center justify-between">
                 {/* left side */}
@@ -79,71 +79,71 @@ const Page = () => {
               <div className="grid md:grid-cols-2 grid-cols-1 gap-2">
                 <div>
                   <label>First Name *</label>
-                  <input type="text" className="w-full py-2"/>
+                  <input type="text" className="w-full py-2 outline-none"/>
                 </div>
                 <div>
                   <label>Last Name *</label>
-                  <input type="text" className="w-full py-2"/>
+                  <input type="text" className="w-full py-2 outline-none"/>
                 </div>
               </div>
               {/* Street Number */}
               <div className="grid md:grid-cols-2 grid-cols-1 gap-2">
                 <div>
                   <label>Street</label>
-                  <input type="text" className="w-full py-2"/>
+                  <input type="text" className="w-full py-2 outline-none"/>
                 </div>
                 <div>
                   <label>Housenumber</label>
-                  <input type="text" className="w-full py-2"/>
+                  <input type="text" className="w-full py-2 outline-none"/>
                 </div>
               </div>
               {/* Zip code */}
               <div className="grid md:grid-cols-2 grid-cols-1 gap-2">
                 <div>
                   <label>Postal code</label>
-                  <input type="text" className="w-full py-2"/>
+                  <input type="text" className="w-full py-2 outline-none"/>
                 </div>
                 <div>
                   <label>City</label>
-                  <input type="text" className="w-full py-2"/>
+                  <input type="text" className="w-full py-2 outline-none"/>
                 </div>
               </div>
               <div className="flex pt-2 md:pt-5 pb-2 md:pb-5 flex-col">
                 <label>Mobile Phone</label>
-                <input type="number" className="py-2 w-full"/>
+                <input type="number" className="py-2 w-full outline-none"/>
               </div>
               <div className="flex pb-2 md:pb-5 flex-col">
                 <label>Email *</label>
-                <input type="text" className="py-2 w-full"/>
+                <input type="text" className="py-2 w-full outline-none"/>
               </div>
               <div className="grid md:grid-cols-2 grid-cols-1 gap-2">
                 <div>
                   <label>Flight from</label>
-                  <input type="text" className="w-full py-2"/>
+                  <input type="text" className="w-full py-2 outline-none"/>
                 </div>
                 <div>
                   <label>Flight to</label>
-                  <input type="text" className="w-full py-2"/>
+                  <input type="text" className="w-full py-2 outline-none"/>
                 </div>
               </div>
               <div className="grid md:grid-cols-2 grid-cols-1 gap-2">
                 <div>
                   <label>Airline</label>
-                  <input type="text" className="w-full py-2"/>
+                  <input type="text" className="w-full py-2 outline-none"/>
                 </div>
                 <div>
                   <label>Flight number</label>
-                  <input type="text" className="w-full py-2"/>
+                  <input type="number" className="w-full py-2 outline-none"/>
                 </div>
               </div>
               <div className="grid md:grid-cols-2 grid-cols-1 gap-2">
                 <div>
                   <label>Date of flight</label>
-                  <input type="date" className="w-full py-2"/>
+                  <input type="date" className="w-full py-2 outline-none"/>
                 </div>
                 <div>
                   <label>Time of flight</label>
-                  <input type="text" className="w-full py-2"/>
+                  <input type="text" className="w-full py-2 outline-none"/>
                 </div>
               </div>
               <div className=" pt-4 pb-8">
