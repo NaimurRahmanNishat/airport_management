@@ -121,7 +121,7 @@ const Page = () => {
         {openRoute && (
           <div className="pt-1">
             <div className="flex items-center justify-center opacity-100 py-5 gap-2 text-center text-green-600">
-              <div className="cursor-pointer bg-slate-200/65 px-10 py-5 hover:font-secondary hover:text-orange-600 text-xl">
+              <div className="cursor-pointer bg-slate-200/65 px-5 md:py-5 md:px-10 py-2 hover:font-secondary hover:text-orange-600 text-xl">
                 <button onClick={handleDomesticRoute}>Domestic Route</button>
               </div>
               <div className="cursor-pointer bg-slate-200/65 px-5 md:py-5 md:px-10 py-2 hover:font-secondary hover:text-orange-600 text-xl">

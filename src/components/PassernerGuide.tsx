@@ -14,7 +14,7 @@ const PassernerGuide = () => {
           viewport={{ once: true }}
           transition={{
             type: "spring",
-            stiffness: 100,
+            stiffness: 50,
             damping: 10,
             delay: 0.8,
           }}
@@ -30,7 +30,7 @@ const PassernerGuide = () => {
           viewport={{ once: true }}
           transition={{
             type: "spring",
-            stiffness: 100,
+            stiffness: 50,
             damping: 10,
             delay: 0.8,
           }}
@@ -47,7 +47,7 @@ const PassernerGuide = () => {
           animate={{ opacity: 1, x: 0 }}
           transition={{
             type: "spring",
-            stiffness: 100,
+            stiffness: 50,
             damping: 10,
             delay: 0.8,
           }}
@@ -67,7 +67,7 @@ const PassernerGuide = () => {
           viewport={{ once: true }}
           transition={{
             type: "spring",
-            stiffness: 100,
+            stiffness: 50,
             damping: 10,
             delay: 0.8,
           }}
@@ -81,9 +81,9 @@ const PassernerGuide = () => {
           viewport={{ once: true }}
           transition={{
             type: "spring",
-            stiffness: 100,
+            stiffness: 50,
             damping: 10,
-            delay: 1.2,
+            delay: 0.8,
           }}
           className="text-lg pb-4 pt-4"
         >
@@ -98,9 +98,9 @@ const PassernerGuide = () => {
           viewport={{ once: true }}
           transition={{
             type: "spring",
-            stiffness: 100,
+            stiffness: 50,
             damping: 10,
-            delay: 1.2,
+            delay: 0.8,
           }}
           className="text-lg pb-4"
         >
@@ -114,9 +114,9 @@ const PassernerGuide = () => {
           viewport={{ once: true }}
           transition={{
             type: "spring",
-            stiffness: 100,
+            stiffness: 50,
             damping: 10,
-            delay: 1.2,
+            delay: 0.8,
           }}
           className="text-lg pb-4"
         >
@@ -145,9 +145,9 @@ const PassernerGuide = () => {
               viewport={{ once: true }}
               transition={{
                 type: "spring",
-                stiffness: 100,
+                stiffness: 50,
                 damping: 10,
-                delay: 1.2,
+                delay: 0.8,
               }}
               className="text-lg pb-4"
             >
@@ -163,9 +163,9 @@ const PassernerGuide = () => {
               viewport={{ once: true }}
               transition={{
                 type: "spring",
-                stiffness: 100,
+                stiffness: 50,
                 damping: 10,
-                delay: 1.2,
+                delay: 0.8,
               }}
               className="text-lg pb-4"
             >

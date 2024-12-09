@@ -29,7 +29,7 @@ const Page = () => {
             Your contact to Flughafen München-Riem Airport
           </h2>
         </div>
-        <div className="w-full h-full pb-4 md:h-[1080px] bg-[#ebe1fc]">
+        <div className="w-full h-full pb-4 md:h-full bg-[#ebe1fc]">
           <div className="md:w-[900px] w-full h-full md:gap-5 gap-3">
             <p className="pt-5 pb-5 px-5 w-full">
               Do you have questions, suggestions, etc.? We&apos;re always happy
