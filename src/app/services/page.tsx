@@ -304,7 +304,7 @@ const Page = () => {
                       Use for visa application/ proof of return
                     </p>
                   </div>
-                  <p className="flex items-center text-center justify-center">
+                  <p className="flex items-center tex justify-center">
                   35 USD | 2750 INR | 128 AED | <br /> 30 EUR | 26.70 GBP
                   </p>
                   <Link
