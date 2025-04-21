@@ -21,6 +21,7 @@ const config: Config = {
         secondary: "#29eaad",
         rgbOrange:  "#FF6900",
         rgbGreen: "#36af54",
+        darkText: "#767676",
       },
       fontFamily: {
         primary: ["Poppins", "sans-serif"],

@@ -5,3 +5,12 @@
 @tailwind components;
 @tailwind utilities;
 
+.pdf-content {
+    margin-top: -660px; /* Adjust as needed */
+  }
+
+  @media print {
+    .no-print {
+      display: none !important;
+    }
+  }
