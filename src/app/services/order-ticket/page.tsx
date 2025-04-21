@@ -1,9 +1,26 @@
 "use client";
 import { useState } from "react";
+import { ChevronDown } from 'lucide-react';
+
+const options = [
+  "Visa application",
+  "Proof of return at airport",
+  "Expedite passport renewal",
+  "Visa extension",
+  "Office work place needs it",
+  "Prank a friend",
+  "Other",
+  "Prefer not to say",
+  "Car rental",
+];
 
 const Page = () => {
   const [openPassenger, setOpenPassenger] = useState<boolean>(false);
-  const [tripType, setTripType] = useState<"oneway" | "roundtrip" | null>("oneway");
+  const [tripType, setTripType] = useState<"oneway" | "roundtrip" | null>(
+    "oneway"
+  );
+  const [isOpen, setIsOpen] = useState<boolean>(false);
+  const [purpose, setPurpose] = useState<string>("Visa application");
 
   const handleMorePassenger = () => {
     setOpenPassenger(!openPassenger);
@@ -66,7 +83,9 @@ const Page = () => {
             </label>
             <div>
               <input type="radio" name="gender" id="male" className="mr-2" />
-              <label htmlFor="male" className="mr-2">Male</label>
+              <label htmlFor="male" className="mr-2">
+                Male
+              </label>
               <input type="radio" name="gender" id="female" className="mr-2" />
               <label htmlFor="female">Female</label>
             </div>
@@ -82,7 +101,9 @@ const Page = () => {
             </div>
             {openPassenger && (
               <div className="pt-5">
-                <h3 className="text-xl">Number of additional passengers: (optional)</h3>
+                <h3 className="text-xl">
+                  Number of additional passengers: (optional)
+                </h3>
                 <div className="py-4">
                   <select className="px-2 w-full py-2 border outline-none cursor-pointer border-green-500 rounded-sm">
                     <option value="">I am the only traveler</option>
@@ -98,20 +119,26 @@ const Page = () => {
 
           {/* travel details */}
           <div>
-            <h2 className="md:text-3xl text-xl font-semibold">Travel Details</h2>
+            <h2 className="md:text-3xl text-xl font-semibold">
+              Travel Details
+            </h2>
             <div>
-              <h4 className="font-semibold text-lg py-5">Trip type <span className="text-red-700">*</span></h4>
+              <h4 className="font-semibold text-lg py-5">
+                Trip type <span className="text-red-700">*</span>
+              </h4>
               <div className="flex items-center gap-16">
                 <div className="flex items-center gap-1">
-                <input
-                  type="radio"
-                  name="tripType"
-                  id="oneway"
-                  checked={tripType === "oneway"}
-                  onChange={() => setTripType("oneway")}
-                />
+                  <input
+                    type="radio"
+                    name="tripType"
+                    id="oneway"
+                    checked={tripType === "oneway"}
+                    onChange={() => setTripType("oneway")}
+                  />
 
-                  <label htmlFor="oneway" className="text-lg font-medium">One Way</label>
+                  <label htmlFor="oneway" className="text-lg font-medium">
+                    One Way
+                  </label>
                 </div>
                 <div className="flex items-center gap-1">
                   <input
@@ -120,7 +147,9 @@ const Page = () => {
                     id="roundtrip"
                     onClick={() => setTripType("roundtrip")}
                   />
-                  <label htmlFor="roundtrip" className="text-lg font-medium">Round trip</label>
+                  <label htmlFor="roundtrip" className="text-lg font-medium">
+                    Round trip
+                  </label>
                 </div>
               </div>
 
@@ -129,25 +158,47 @@ const Page = () => {
                 <>
                   <div className="flex w-full gap-4">
                     <div className="w-1/2 flex flex-col py-2">
-                      <label className="md:text-xl font-medium pb-2">From city / Origin <span className="text-red-800">*</span></label>
-                      <input type="text" className="px-3 py-2 border border-gray-300 focus:border-red-600 rounded-md outline-none" />
+                      <label className="md:text-xl font-medium pb-2">
+                        From city / Origin{" "}
+                        <span className="text-red-800">*</span>
+                      </label>
+                      <input
+                        type="text"
+                        className="px-3 py-2 border border-gray-300 focus:border-red-600 rounded-md outline-none"
+                      />
                     </div>
                     <div className="w-1/2 flex flex-col py-2">
-                      <label className="md:text-xl font-medium pb-2">To city / Destination <span className="text-red-800">*</span></label>
-                      <input type="text" className="px-3 py-2 border border-gray-300 focus:border-red-600 rounded-md outline-none" />
+                      <label className="md:text-xl font-medium pb-2">
+                        To city / Destination{" "}
+                        <span className="text-red-800">*</span>
+                      </label>
+                      <input
+                        type="text"
+                        className="px-3 py-2 border border-gray-300 focus:border-red-600 rounded-md outline-none"
+                      />
                     </div>
                   </div>
 
                   <div className="flex w-full gap-4">
                     <div className="w-1/2 flex flex-col py-2">
-                      <label className="md:text-xl font-medium pb-2">Departure date <span className="text-red-800">*</span></label>
-                      <input type="date" className="px-3 py-2 border border-gray-300 focus:border-red-600 rounded-md outline-none" />
+                      <label className="md:text-xl font-medium pb-2">
+                        Departure date <span className="text-red-800">*</span>
+                      </label>
+                      <input
+                        type="date"
+                        className="px-3 py-2 border border-gray-300 focus:border-red-600 rounded-md outline-none"
+                      />
                     </div>
 
                     {tripType === "roundtrip" && (
                       <div className="w-1/2 flex flex-col py-2">
-                        <label className="md:text-xl font-medium pb-2">Return date <span className="text-red-800">*</span></label>
-                        <input type="date" className="px-3 py-2 border border-gray-300 focus:border-red-600 rounded-md outline-none" />
+                        <label className="md:text-xl font-medium pb-2">
+                          Return date <span className="text-red-800">*</span>
+                        </label>
+                        <input
+                          type="date"
+                          className="px-3 py-2 border border-gray-300 focus:border-red-600 rounded-md outline-none"
+                        />
                       </div>
                     )}
                   </div>
@@ -155,12 +206,83 @@ const Page = () => {
               )}
             </div>
           </div>
+
           {/* Additional information (optional) */}
           <div className="md:py-4 py-2">
-            <h4 className="text-xl font-semibold pb-4">Additional information (optional)</h4>
-            <textarea  placeholder="Enter any additional information that you like us to keep in mind." className="px-2 w-full py-2 border border-gray-300 rounded-md outline-none focus:border-gray-700"></textarea>
+            <h4 className="text-xl font-semibold pb-4">
+              Additional information (optional)
+            </h4>
+            <textarea
+              placeholder="Enter any additional information that you like us to keep in mind."
+              className="px-2 w-full py-2 border border-gray-300 rounded-md outline-none focus:border-gray-700"
+            ></textarea>
           </div>
+
           {/* Delivery options */}
+          <div>
+            <h1 className="md:text-3xl text-xl">Delivery options:</h1>
+            <div className="md:py-4 py-2 flex gap-4 flex-col">
+              <strong className="text-lg">
+                Purpose of dummy ticket (optional)
+              </strong>
+              <div className="relative">
+                <div
+                  className="px-3 py-2 border border-gray-300 rounded-md w-full cursor-pointer flex justify-between items-center"
+                  onClick={() => setIsOpen(!isOpen)}
+                >
+                  <span>{purpose}</span>
+                  <ChevronDown className={`w-4 h-4 ml-2 transition-transform ${
+                      isOpen ? "rotate-180" : ""
+                    }`}/>
+                </div>
+                {isOpen && (
+                  <div className="absolute z-10 mt-1 w-full bg-white border border-gray-300 rounded-md shadow-lg max-h-60 overflow-auto">
+                    {options.map((option) => (
+                      <div
+                        key={option}
+                        className={`px-3 py-2 hover:bg-gray-100 cursor-pointer ${
+                          purpose === option ? "bg-gray-100 font-medium" : ""
+                        }`}
+                        onClick={() => {
+                          setPurpose(option);
+                          setIsOpen(false);
+                        }}
+                      >
+                        {option}
+                      </div>
+                    ))}
+                  </div>
+                )}
+              </div>
+            </div>
+          </div>
+
+          {/* Appointment / Submission date (optional) */}
+          <div className="md:pb-4 pb-2 flex flex-col">
+            <strong className="pb-2">Appointment / Submission date (optional)</strong>
+            <input type="date" className="px-3 py-2 border border-gray-300 rounded-md outline-none focus:border-gray-700"/>
+          </div>
+
+          {/* How will you like to receive the dummy ticket (optional) */}
+          <div className="md:py-8 py-4">
+            <strong>How will you like to receive the dummy ticket (optional)</strong>
+            <div className="flex gap-16">
+              <div className="flex gap-1 items-center py-2">
+                <input type="radio" name="receive" id="email"/>
+                <label htmlFor="email">Email</label>
+              </div>
+              <div className="flex gap-1 items-center py-2">
+                <input type="radio" name="receive" id="whatsapp"/>
+                <label htmlFor="whatsapp">Whatsapp</label>
+              </div>
+              <div className="flex gap-1 items-center py-2">
+                <input type="radio" name="receive" id="both"/>
+                <label htmlFor="both">Both</label>
+              </div>
+            </div>
+          </div>
+
+          {/* Billing Details */}
           <div></div>
         </div>
 
@@ -168,7 +290,9 @@ const Page = () => {
         <div className="w-full md:w-1/2">
           <h2 className="text-2xl md:pb-12 pb-6">Additional information</h2>
           <div className="flex flex-col gap-3">
-            <h2 className="text-2xl pb-2 font-medium">Order Notes (optional)</h2>
+            <h2 className="text-2xl pb-2 font-medium">
+              Order Notes (optional)
+            </h2>
             <textarea
               placeholder="Notes about your order"
               className="border px-4 py-1 border-slate-300 outline-none"
