@@ -18,7 +18,8 @@ const config: Config = {
         pink: "#d63384",
         teal: "#20c997",
         primary: "#0d0437",
-        secondary: "#29eaad", 
+        secondary: "#29eaad",
+        rgbOrange:  "#FF6900",
       },
       fontFamily: {
         primary: ["Poppins", "sans-serif"],

@@ -17,7 +17,7 @@ const Navbar = () => {
   };
 
   const isActive = (path: string) =>
-    currentPath === path ? "text-orange-600" : "text-black";
+    currentPath === path ? "text-orange-600 border-b-2 border-orange-600" : "text-black";
 
   return (
     <header
@@ -68,7 +68,7 @@ const Navbar = () => {
         ) : (
           <>
             <Link href="/profile">
-              <li className="hover:text-orange-600">Profile</li>
+              <button className="hover:scale-105 active:scale-95 duration-500 px-4 py-2 bg-gradient-to-t from-purple-600 to-blue-600 rounded-full text-white">Profile</button>
             </Link>
             <li className="flex items-center">
               <UserButton />
@@ -83,10 +83,10 @@ const Navbar = () => {
           {!userId ? (
             <>
               <Link href="/sign-in" className="hover:text-orange-600">
-                <li>Sign In</li>
+                <button className="hover:scale-105 active:scale-95 duration-500 px-4 py-2 bg-gradient-to-t from-purple-600 to-blue-600 rounded-full text-white">Sign In</button>
               </Link>
-              <Link href="/sign-up" className="hover:text-orange-600">
-                <li>Sign Up</li>
+              <Link href="/sign-up" className="">
+                <button className="hover:scale-105 active:scale-95 duration-500 px-4 py-2 bg-gradient-to-t from-purple-600 to-blue-600 rounded-full text-white">Sign Up</button>
               </Link>
             </>
           ) : (

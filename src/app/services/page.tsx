@@ -6,6 +6,7 @@ import InternationalRoute from "@/components/InternationalRoute";
 import PassernerGuide from "@/components/PassernerGuide";
 import AircraftNumber from "@/components/AircraftNumber";
 import TicketPrice from "@/components/TicketPrice";
+import Link from "next/link";
 
 const Page = () => {
   const { isLoaded, isSignedIn, user } = useUser();
@@ -135,19 +136,19 @@ const Page = () => {
         {/* Open Passenger Guide */}
         {openGuide && (
           <div>
-            <PassernerGuide/>
+            <PassernerGuide />
           </div>
         )}
         {/* Open Aircraft Number */}
         {airNumber && (
           <div>
-            <AircraftNumber/>
+            <AircraftNumber />
           </div>
         )}
         {/* Open Ticket Price */}
         {ticketPrice && (
           <div>
-            <TicketPrice/>
+            <TicketPrice />
           </div>
         )}
         {/* open Domestic flight */}
@@ -215,6 +216,147 @@ const Page = () => {
           perfect for travel websites, blogs and vlogs. Use the below button to
           sign-up and start making money{" "}
         </p>
+      </div>
+      {/* airport ticket book */}
+      <div className="md:pt-8 pt-5">
+        <h2 className="md:text-5xl pb-5 text-3xl text-rose-400 font-bold text-center">
+          Airport Ticket Book
+        </h2>
+        <div className="flex flex-col items-center justify-center">
+          <div className="flex items-center justify-center">
+            <h2 className="md:text-4xl pb-5 md:pb-12 text-3xl text-rgbOrange font-bold text-center">
+              Pricing
+            </h2>
+          </div>
+          <div className="flex items-center justify-center md:gap-12 gap- md:pb-20 pb-10">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+              <div className="bg-white">
+                <div className="bg-rgbOrange p-8 text-white">
+                  <h2 className="uppercase text-2xl text-center font-medium">
+                    Dummy Ticket for visa
+                  </h2>
+                  <p className="md:pt-6 pt-3 md:text-3xl text-xl text-center">
+                    <sup className="text-lg">$</sup>19
+                    <sub className="text-sm">/person</sub>{" "}
+                  </p>
+                </div>
+                <div className="my-8">
+                  <div className="mx-6 my-4 bg-slate-100">
+                    <p className="flex items-center justify-center py-2">
+                      Flight reservation/ itinerary
+                    </p>
+                  </div>
+                  <p className="flex items-center justify-center">
+                    verifiable on airline website
+                  </p>
+                  <div className="mx-6 my-4 bg-slate-100">
+                    <p className="flex items-center justify-center py-2">
+                      Up to 4 changes allowed
+                    </p>
+                  </div>
+                  <p className="flex items-center justify-center">
+                    Use for visa application/ proof of return
+                  </p>
+                  <div className="mx-6 my-4 bg-slate-100">
+                    <p className="flex items-center text-center justify-center py-2">
+                      19 USD | 1200 INR | 70 AED |<br /> 16 EUR | 14.50 GBP
+                    </p>
+                  </div>
+                  <Link
+                    href={"/services/order-ticket"}
+                    className="flex items-center justify-center mt-8"
+                  >
+                    <button className="px-4 py-2 hover:bg-rgbOrange hover:text-white rounded-sm text-rgbOrange border border-rgbOrange">
+                      Order Ticket
+                    </button>
+                  </Link>
+                </div>
+              </div>
+              <div className="bg-white ">
+                <div className="bg-rgbOrange p-8 text-white">
+                  <h2 className="uppercase text-2xl font-medium">
+                    Dummy Ticket & Hotel
+                  </h2>
+                  <p className="md:pt-6 pt-3 md:text-3xl text-xl text-center">
+                    <sup className="text-lg">$</sup>35
+                    <sub className="text-sm">/person</sub>{" "}
+                  </p>
+                </div>
+                <div className="my-8">
+                <div className="mx-6 my-4 bg-slate-100">
+                    <p className="flex items-center justify-center py-2">
+                      Actual reservation from airline/hotel
+                    </p>
+                  </div>
+                  <p className="flex items-center justify-center">
+                    Verifiable on airline/hotel website
+                  </p>
+                <div className="mx-6 my-4 bg-slate-100">
+                    <p className="flex items-center justify-center py-2">
+                      Accomodation up to one month
+                    </p>
+                  </div>
+                  <p className="flex items-center justify-center">
+                    Up to 4 changes allowed
+                  </p>
+                <div className="mx-6 my-4 bg-slate-100">
+                    <p className="flex items-center justify-center py-2">
+                      Use for visa application/ proof of return
+                    </p>
+                  </div>
+                  <p className="flex items-center text-center justify-center">
+                  35 USD | 2750 INR | 128 AED | <br /> 30 EUR | 26.70 GBP
+                  </p>
+                  <Link
+                    href={"/services/order-ticket"}
+                    className="flex items-center justify-center mt-8"
+                  >
+                    <button className="px-4 py-2 hover:bg-rgbOrange hover:text-white rounded-sm text-rgbOrange border border-rgbOrange">
+                      Order Ticket
+                    </button>
+                  </Link>
+                </div>
+              </div>
+              <div className="bg-white">
+                <div className="bg-rgbOrange p-8 text-white">
+                  <h2 className="uppercase text-2xl font-medium">
+                    Dummy return ticket
+                  </h2>
+                  <p className="md:pt-6 pt-3 md:text-3xl text-xl text-center">
+                    <sup className="text-lg">$</sup>15
+                    <sub className="text-sm">/person</sub>{" "}
+                  </p>
+                </div>
+                <div className="my-8">
+                <div className="mx-6 my-4 bg-slate-100">
+                    <p className="flex items-center justify-center py-2">
+                    Return ticket for showing in immigration
+                    </p>
+                  </div>
+                  <p className="flex items-center justify-center">
+                  Verifiable flight reservation with PNR
+                  </p>
+                <div className="mx-6 my-4 bg-slate-100">
+                    <p className="flex items-center text-center justify-center py-2">
+                    Can be used to show as proof <br /> of return or onward travel in <br /> most countries
+                    </p>
+                  </div>
+                  <p className="flex items-center text-center justify-center">
+                  15 USD | 990 INR | 55 AED |<br /> 14 EUR | 12.50 GBP
+                  </p>
+                  <Link
+                    href={"/services/order-ticket"}
+                    className="flex items-center justify-center mt-8"
+                  >
+                    <button className="px-4 py-2 hover:bg-rgbOrange hover:text-white rounded-sm text-rgbOrange border border-rgbOrange">
+                      Order Ticket
+                    </button>
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </main>
   );
