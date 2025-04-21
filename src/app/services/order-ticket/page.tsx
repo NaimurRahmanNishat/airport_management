@@ -49,13 +49,13 @@ const Page = () => {
           </div>
 
           {/* date of birth */}
-          <div className="py-3">
+          <div className="flex flex-col gap-2 py-3">
             <label className="text-lg text-red-800 font-medium">
               Date of birth <span className="text-red-600">*</span>
             </label>
             <input
               type="date"
-              className="px-2 py-1 rounded-sm w-full border border-red-800 outline-none"
+              className="px-2 py-1 rounded-md w-1/2 border border-gray-400 focus:border-red-800 outline-none"
             />
           </div>
 
